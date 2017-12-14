@@ -2,5 +2,5 @@
   tasks:
     - name: package install
       yum:
-        name: "{{ yum }}"
+        name: "{{ yum_pkg }}"
         state: latest

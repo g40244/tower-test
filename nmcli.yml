@@ -1,6 +1,0 @@
-- hosts: all
-  tasks:
-    - name: enable NAT adapter
-      nmcli:
-        conn_name: enp0s3
-        state: present

@@ -5,11 +5,11 @@
         path: "{{ configlinesinfile.path }}"
         insertafter: "{{ configlinesinfile.baseline }}"
         line: "{{ configlinesinfile.current }}"
-      when: configlinesinfile.previous is not define
+      when: configlinesinfile.previous is undefined
     
     - name: replace line
       lineinfile:
         path: "{{ configlinesinfile.path }}"
         regexp: "{{ configlinesinfile.previous }}"
         line: "{{ configlinesinfile.current }}"
-      when: configlinesinfile.previous is define
+      when: configlinesinfile.previous is defined

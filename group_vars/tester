@@ -4,6 +4,10 @@ yum_pkg:
 configlinesinfile:
   path: /etc/hosts
   baseline: '^::1'
+  previous: |-
+    192.168.1.111    tester1
+    192.168.1.112    tester2
   current: |-
+    
     192.168.1.111    tester1
     192.168.1.112    tester2

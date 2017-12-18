@@ -1,2 +1,9 @@
 yum_pkg:
   - vim
+
+configlinesinfile:
+  path: /etc/hosts
+  baseline: '^::1'
+  current: |-
+    192.168.1.111    tester1
+    192.168.1.112    tester2
